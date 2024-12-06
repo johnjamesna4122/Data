@@ -1,0 +1,305 @@
+Return-Path: <david.black@emc.com>
+X-Original-To: clouds@core3.amsl.com
+Delivered-To: clouds@core3.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by core3.amsl.com (Postfix)
+ with ESMTP id 0CE423A6903 for <clouds@core3.amsl.com>;
+ Sat, 29 Jan 2011 16:34:38 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -106.598
+X-Spam-Level: 
+X-Spam-Status: No,
+ score=-106.598 tagged_above=-999 required=5 tests=[AWL=-0.000, BAYES_00=-2.599,
+ HTML_MESSAGE=0.001, RCVD_IN_DNSWL_MED=-4, USER_IN_WHITELIST=-100]
+Received: from mail.ietf.org ([64.170.98.32]) by localhost (core3.amsl.com
+ [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id 36lMPcoPKws1 for
+ <clouds@core3.amsl.com>; Sat, 29 Jan 2011 16:34:34 -0800 (PST)
+Received: from mexforward.lss.emc.com (mexforward.lss.emc.com [128.222.32.20])
+ by core3.amsl.com (Postfix) with ESMTP id 7EE2B3A68AF for <clouds@ietf.org>;
+ Sat, 29 Jan 2011 16:34:34 -0800 (PST)
+Received: from hop04-l1d11-si02.isus.emc.com (HOP04-L1D11-SI02.isus.emc.com
+ [10.254.111.55]) by mexforward.lss.emc.com (Switch-3.4.3/Switch-3.4.3) with
+ ESMTP id p0U0bgqV002794 (version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA
+ bits=256 verify=NO); Sat, 29 Jan 2011 19:37:42 -0500
+Received: from mailhub.lss.emc.com (mailhub.lss.emc.com [10.254.222.226]) by
+ hop04-l1d11-si02.isus.emc.com (RSA Interceptor);
+ Sat, 29 Jan 2011 19:37:32 -0500
+Received: from mxhub08.corp.emc.com (mxhub08.corp.emc.com [128.221.46.116]) by
+ mailhub.lss.emc.com (Switch-3.4.3/Switch-3.4.3) with ESMTP id p0U0axRQ026776;
+ Sat, 29 Jan 2011 19:36:59 -0500
+Received: from mx14a.corp.emc.com ([169.254.1.66]) by mxhub08.corp.emc.com
+ ([128.221.46.116]) with mapi; Sat, 29 Jan 2011 19:36:59 -0500
+From: <david.black@emc.com>
+To: <vumip1@gmail.com>, <clouds@ietf.org>
+Date: Sat, 29 Jan 2011 19:36:56 -0500
+Thread-Topic: [clouds] Strawman CloudApps BoF (proposed for IETF-80) Agenda
+Thread-Index: Acu//QzDmturqhmCRBaHhIVGk+YKRQAF+g+Q
+Message-ID: <7C4DFCE962635144B8FAE8CA11D0BF1E03DA705D7A@MX14A.corp.emc.com>
+References: <AANLkTinRr5+=bzaBLHZjO7huvmNm0mrE4ukbyQEXNy6-@mail.gmail.com>
+In-Reply-To: <AANLkTinRr5+=bzaBLHZjO7huvmNm0mrE4ukbyQEXNy6-@mail.gmail.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+acceptlanguage: en-US
+Content-Type: multipart/alternative;
+ boundary="_000_7C4DFCE962635144B8FAE8CA11D0BF1E03DA705D7AMX14Acorpemcc_"
+MIME-Version: 1.0
+X-EMM-MHVC: 1
+Subject: Re: [clouds] Strawman CloudApps BoF (proposed for IETF-80) Agenda
+X-BeenThere: clouds@ietf.org
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: Clouds pre-BOF discussion list <clouds.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/listinfo/clouds>,
+ <mailto:clouds-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/clouds>
+List-Post: <mailto:clouds@ietf.org>
+List-Help: <mailto:clouds-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/clouds>,
+ <mailto:clouds-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Sun, 30 Jan 2011 00:34:38 -0000
+
+--_000_7C4DFCE962635144B8FAE8CA11D0BF1E03DA705D7AMX14Acorpemcc_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Here's a hint from an IETF process perspective - remove item -3-, and roll =
+a small piece of it into item -4-.   The primary purpose of a BoF is to get=
+ to a WG charter (or decide that a WG is not appropriate).  Handing out pre=
+sentation slots to every possibly relevant I-D mostly serves to reduce the =
+time available for that purpose.
+
+Thanks,
+--David (storm WG chair, past chair of other IETF WGs, has been through a n=
+umber of BoF experiences ...)
+----------------------------------------------------
+David L. Black, Distinguished Engineer
+EMC Corporation, 176 South St., Hopkinton, MA  01748
++1 (508) 293-7953             FAX: +1 (508) 293-7786
+david.black@emc.com        Mobile: +1 (978) 394-7754
+----------------------------------------------------
+
+From: clouds-bounces@ietf.org [mailto:clouds-bounces@ietf.org] On Behalf Of=
+ Bhumip Khasnabish
+Sent: Saturday, January 29, 2011 4:39 PM
+To: clouds@ietf.org
+Subject: [clouds] Strawman CloudApps BoF (proposed for IETF-80) Agenda
+
+
+Strawman CloudApps BoF Agenda
+(Early draft)
+-1- Introduction by chairs
+-2- Problems and Open issues
+
+a)      Potential CloudApps workitems and use cases
+
+b)      Discussion on level of interest
+-3- Scope and requirements of the work in IETF
+
+a)      Presentation of other I-Ds related to survey, framework, and gaps
+
+b)      Presentations on I-Ds related to requirements and proposed solution=
+s of a handful of potential workitems
+
+c)      Prioritization of work items
+-4- Discussion of potential charter
+
+a)      Presentation of a draft charter & list of deliverables by chairs
+
+b)      Discussion on the draft charter
+-5- Consensus and debates
+
+a)      Problem description and the need to solve them
+
+b)      Workitems to solve in IETF and consensus on descriptions
+
+c)      Contributors, reviewers and editors
+
+d)      Update the proposed charter to reflect the consensus
+
+e)      Decision on the formation of the working group
+
+Best Regards.
+
+Bhumip Khasnabish (Mobile:+001-781-752-8003, vumip1@gmail.com<mailto:vumip1=
+@gmail.com>)
+http://www.linkedin.com/in/bhumipkhasnabish
+
+
+
+
+--_000_7C4DFCE962635144B8FAE8CA11D0BF1E03DA705D7AMX14Acorpemcc_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40"><head><meta http-equiv=3DContent-Type content=
+=3D"text/html; charset=3Dus-ascii"><meta name=3DGenerator content=3D"Micros=
+oft Word 12 (filtered medium)"><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.EmailStyle19
+	{mso-style-type:personal-reply;
+	font-family:"Courier New";
+	color:black;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none none;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US link=3Dblue vli=
+nk=3Dpurple><div class=3DWordSection1><p class=3DMsoNormal><span style=3D'f=
+ont-size:10.0pt;font-family:"Courier New";color:black'>Here&#8217;s a hint =
+from an IETF process perspective &#8211; remove item -3-, and roll a small =
+piece of it into item -4-. &nbsp;&nbsp;The primary purpose of a BoF is to g=
+et to a WG charter (or decide that a WG is not appropriate).&nbsp; Handing =
+out presentation slots to every possibly relevant I-D mostly serves to redu=
+ce the time available for that purpose.<o:p></o:p></span></p><p class=3DMso=
+Normal><span style=3D'font-size:10.0pt;font-family:"Courier New";color:blac=
+k'><o:p>&nbsp;</o:p></span></p><p class=3DMsoNormal><span style=3D'font-siz=
+e:10.0pt;font-family:"Courier New";color:black'>Thanks,<br>--David (storm W=
+G chair, past chair of other IETF WGs, has been through a number of BoF exp=
+eriences ...)<br>----------------------------------------------------<br>Da=
+vid L. Black, Distinguished Engineer<br>EMC Corporation, 176 South St., Hop=
+kinton, MA&nbsp; 01748<br>+1 (508) 293-7953&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FAX: +1 (508) 293-7786<br>david.bl=
+ack@emc.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile: +1 (978) 394-=
+7754<br>----------------------------------------------------</span><span st=
+yle=3D'font-size:11.0pt;font-family:"Courier New";color:black'><o:p></o:p><=
+/span></p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:=
+"Courier New";color:black'><o:p>&nbsp;</o:p></span></p><div style=3D'border=
+:none;border-left:solid blue 1.5pt;padding:0in 0in 0in 4.0pt'><div><div sty=
+le=3D'border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0in 0in 0in'=
+><p class=3DMsoNormal><b><span style=3D'font-size:10.0pt;font-family:"Tahom=
+a","sans-serif"'>From:</span></b><span style=3D'font-size:10.0pt;font-famil=
+y:"Tahoma","sans-serif"'> clouds-bounces@ietf.org [mailto:clouds-bounces@ie=
+tf.org] <b>On Behalf Of </b>Bhumip Khasnabish<br><b>Sent:</b> Saturday, Jan=
+uary 29, 2011 4:39 PM<br><b>To:</b> clouds@ietf.org<br><b>Subject:</b> [clo=
+uds] Strawman CloudApps BoF (proposed for IETF-80) Agenda<o:p></o:p></span>=
+</p></div></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p class=3DMsoNor=
+mal><br clear=3Dall><o:p></o:p></p><p class=3DMsoNormal style=3D'mso-margin=
+-top-alt:5.0pt;margin-right:0in;margin-bottom:5.0pt;margin-left:0in'><b><sp=
+an style=3D'font-family:"Calibri","sans-serif"'>Strawman CloudApps BoF Agen=
+da</span></b><o:p></o:p></p><p class=3DMsoNormal style=3D'mso-margin-top-al=
+t:5.0pt;margin-right:0in;margin-bottom:5.0pt;margin-left:0in'><i><span styl=
+e=3D'font-family:"Calibri","sans-serif"'>(Early draft)</span></i><o:p></o:p=
+></p><p class=3DMsoNormal style=3D'mso-margin-top-alt:5.0pt;margin-right:0i=
+n;margin-bottom:5.0pt;margin-left:0in'><span style=3D'font-family:"Calibri"=
+,"sans-serif"'>-1- Introduction by chairs&nbsp; </span><o:p></o:p></p><p cl=
+ass=3DMsoNormal style=3D'mso-margin-top-alt:5.0pt;margin-right:0in;margin-b=
+ottom:5.0pt;margin-left:0in'><span style=3D'font-family:"Calibri","sans-ser=
+if"'>-2- Problems and Open issues </span><o:p></o:p></p><p class=3DMsoListP=
+aragraphCxSpFirst style=3D'margin-left:.5in;text-indent:-.25in'><span style=
+=3D'font-family:"Calibri","sans-serif"'>a)</span><span style=3D'font-size:7=
+.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=3D'font-family:"Cal=
+ibri","sans-serif"'>Potential CloudApps workitems and use cases</span><o:p>=
+</o:p></p><p class=3DMsoListParagraphCxSpLast style=3D'margin-left:.5in;tex=
+t-indent:-.25in'><span style=3D'font-family:"Calibri","sans-serif"'>b)</spa=
+n><span style=3D'font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sp=
+an style=3D'font-family:"Calibri","sans-serif"'>Discussion on level of inte=
+rest </span><o:p></o:p></p><p class=3DMsoNormal style=3D'mso-margin-top-alt=
+:5.0pt;margin-right:0in;margin-bottom:5.0pt;margin-left:0in'><span style=3D=
+'font-family:"Calibri","sans-serif"'>-3- Scope and requirements of the work=
+ in IETF </span><o:p></o:p></p><p class=3DMsoListParagraphCxSpFirst style=
+=3D'margin-left:.5in;text-indent:-.25in'><span style=3D'font-family:"Calibr=
+i","sans-serif"'>a)</span><span style=3D'font-size:7.0pt'>&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; </span><span style=3D'font-family:"Calibri","sans-serif"'>Pre=
+sentation of other I-Ds related to <i><u>survey</u></i>, <i><u>framework</u=
+></i>, and <i><u>gaps</u></i></span><o:p></o:p></p><p class=3DMsoListParagr=
+aphCxSpMiddle style=3D'margin-left:.5in;text-indent:-.25in'><span style=3D'=
+font-family:"Calibri","sans-serif"'>b)</span><span style=3D'font-size:7.0pt=
+'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=3D'font-family:"Calibri=
+","sans-serif"'>Presentations on I-Ds related to <i><u>requirements</u></i>=
+ and proposed solutions of a handful of <i><u>potential workitems</u></i></=
+span><o:p></o:p></p><p class=3DMsoListParagraphCxSpLast style=3D'margin-lef=
+t:.5in;text-indent:-.25in'><span style=3D'font-family:"Calibri","sans-serif=
+"'>c)</span><span style=3D'font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span><span style=3D'font-family:"Calibri","sans-serif"'>Prioritization of=
+ work items </span><o:p></o:p></p><p class=3DMsoNormal style=3D'mso-margin-=
+top-alt:5.0pt;margin-right:0in;margin-bottom:5.0pt;margin-left:0in'><span s=
+tyle=3D'font-family:"Calibri","sans-serif"'>-4- Discussion of potential cha=
+rter </span><o:p></o:p></p><p class=3DMsoListParagraphCxSpFirst style=3D'ma=
+rgin-left:.5in;text-indent:-.25in'><span style=3D'font-family:"Calibri","sa=
+ns-serif"'>a)</span><span style=3D'font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp; </span><span style=3D'font-family:"Calibri","sans-serif"'>Presentat=
+ion of a <i><u>draft charter</u></i> &amp; list of <i><u>deliverables</u></=
+i> by chairs</span><o:p></o:p></p><p class=3DMsoListParagraphCxSpLast style=
+=3D'margin-left:.5in;text-indent:-.25in'><span style=3D'font-family:"Calibr=
+i","sans-serif"'>b)</span><span style=3D'font-size:7.0pt'>&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; </span><span style=3D'font-family:"Calibri","sans-serif"'>Dis=
+cussion on the draft charter</span><o:p></o:p></p><p class=3DMsoNormal styl=
+e=3D'mso-margin-top-alt:5.0pt;margin-right:0in;margin-bottom:5.0pt;margin-l=
+eft:0in'><span style=3D'font-family:"Calibri","sans-serif"'>-5- Consensus a=
+nd debates </span><o:p></o:p></p><p class=3DMsoListParagraphCxSpFirst style=
+=3D'margin-left:.5in;text-indent:-.25in'><span style=3D'font-family:"Calibr=
+i","sans-serif"'>a)</span><span style=3D'font-size:7.0pt'>&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp; </span><span style=3D'font-family:"Calibri","sans-serif"'>Pro=
+blem description and the need to solve them</span><o:p></o:p></p><p class=
+=3DMsoListParagraphCxSpMiddle style=3D'margin-left:.5in;text-indent:-.25in'=
+><span style=3D'font-family:"Calibri","sans-serif"'>b)</span><span style=3D=
+'font-size:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=3D'font=
+-family:"Calibri","sans-serif"'>Workitems to solve in IETF and consensus on=
+ descriptions</span><o:p></o:p></p><p class=3DMsoListParagraphCxSpMiddle st=
+yle=3D'margin-left:.5in;text-indent:-.25in'><span style=3D'font-family:"Cal=
+ibri","sans-serif"'>c)</span><span style=3D'font-size:7.0pt'>&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; </span><span style=3D'font-family:"Calibri","sans-serif"'>=
+Contributors, reviewers and editors </span><o:p></o:p></p><p class=3DMsoLis=
+tParagraphCxSpMiddle style=3D'margin-left:.5in;text-indent:-.25in'><span st=
+yle=3D'font-family:"Calibri","sans-serif"'>d)</span><span style=3D'font-siz=
+e:7.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style=3D'font-family:"=
+Calibri","sans-serif"'>Update the proposed charter to reflect the consensus=
+</span><o:p></o:p></p><p class=3DMsoListParagraphCxSpLast style=3D'margin-l=
+eft:.5in;text-indent:-.25in'><strong><span style=3D'font-family:"Calibri","=
+sans-serif";font-weight:normal'>e)</span></strong><strong><span style=3D'fo=
+nt-size:7.0pt;font-weight:normal'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></s=
+trong><span style=3D'font-family:"Calibri","sans-serif"'>Decision on the fo=
+rmation of the working group </span><o:p></o:p></p><p class=3DMsoNormal><o:=
+p>&nbsp;</o:p></p><div><p class=3DMsoNormal>Best Regards.<br><br>Bhumip Kha=
+snabish (Mobile:+001-781-752-8003, <a href=3D"mailto:vumip1@gmail.com" targ=
+et=3D"_blank">vumip1@gmail.com</a>)<br><a href=3D"http://www.linkedin.com/i=
+n/bhumipkhasnabish" target=3D"_blank">http://www.linkedin.com/in/bhumipkhas=
+nabish</a><o:p></o:p></p></div><div><p class=3DMsoNormal><br>&nbsp;<o:p></o=
+:p></p></div><p class=3DMsoNormal><o:p>&nbsp;</o:p></p></div></div></body><=
+/html>=
+
+--_000_7C4DFCE962635144B8FAE8CA11D0BF1E03DA705D7AMX14Acorpemcc_--

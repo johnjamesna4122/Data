@@ -1,0 +1,76 @@
+From noreply@ietf.org  Tue Apr  2 06:05:46 2024
+Return-Path: <noreply@ietf.org>
+X-Original-To: art@ietf.org
+Delivered-To: art@ietfa.amsl.com
+Received: from ietfa.amsl.com (localhost [IPv6:::1])
+ by ietfa.amsl.com (Postfix) with ESMTP id 89E5BC151064;
+ Tue,  2 Apr 2024 06:05:46 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Valery Smyslov via Datatracker <noreply@ietf.org>
+To: <art@ietf.org>
+Cc: draft-ietf-mls-architecture.all@ietf.org, last-call@ietf.org, mls@ietf.org
+X-Test-IDTracker: no
+X-IETF-IDTracker: 12.9.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: <171206314655.12233.11916326543496262817@ietfa.amsl.com>
+Reply-To: Valery Smyslov <valery@smyslov.net>
+Date: Tue, 02 Apr 2024 06:05:46 -0700
+Archived-At: <https://mailarchive.ietf.org/arch/msg/art/GgDi7tAbaN3aNuMOSOv-s3gW-6s>
+Subject: [art] Artart last call review of draft-ietf-mls-architecture-13
+X-BeenThere: art@ietf.org
+X-Mailman-Version: 2.1.39
+List-Id: Applications and Real-Time Area Discussion <art.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/options/art>,
+ <mailto:art-request@ietf.org?subject=unsubscribe>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/art/>
+List-Post: <mailto:art@ietf.org>
+List-Help: <mailto:art-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/art>,
+ <mailto:art-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Tue, 02 Apr 2024 13:05:46 -0000
+
+Reviewer: Valery Smyslov
+Review result: Ready with Issues
+
+I am the assigned ART directorate reviewer for this document. These comments
+were written primarily for the benefit of the ART area directors.  Document
+editors and WG chairs should treat these comments just like any other last call
+comments.
+
+I reviewed the -09 and -10 versions of the draft before. Some of my concerns
+were addressed in the -13 version. I still have the following minor issues with
+the document.
+
+1) It is still unclear to me if it is ever possible for a client (let it be
+Alice) that support only version x of the protocol to join the group that was
+formed using version y (y > x) of the protocol, even when all the members of
+this group support both versions. In other words, if the group originally
+included Alice, the members would have negotiated using version x. But if the
+Alice tries to join the group later, then it is not clear for me whether she is
+able to do it. The document seems to allow upgrading version of the group, but
+seems to not allow downgrading it (even for a legitimate user wishing to join).
+
+2) After adding a few clarification words into the document I now seem to
+understand that DS type (Strongly Consistent / Eventually Consistent) also
+influences clients' behavior. At least clients must be able to handle rejected
+messages to to work with Strongly Consistent DS. I still would like to see more
+words in the document discussing possible (in?)compatibility between clients
+and Delivery Services depending on the type of the latters.
+
+3) The issue of inability for a client to remove itself from the group by
+its own seems unsolvable in the MLS architecture. I still think that some
+recommendations in the document for clients wishing to exclude themselves in
+situations when other members for some reasons don't cooperate in this process
+would be helpful.
+
+Nits:
+URL provided in the [CAPBR] reference doesn't contain full article, only its
+abstract, that makes it difficult for readers to independently verify claims
+made in the draft regarding "CAP theorem".
+
+While I think these issues are important, I'd leave them on ADs' discretion.
+
+

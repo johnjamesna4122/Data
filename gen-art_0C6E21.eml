@@ -1,0 +1,207 @@
+Return-Path: <housley@vigilsec.com>
+X-Original-To: gen-art@ietfa.amsl.com
+Delivered-To: gen-art@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1])
+	by ietfa.amsl.com (Postfix) with ESMTP id B91DDC1519A8;
+	Thu,  5 Dec 2024 10:52:09 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.104
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.104 tagged_above=-999 required=5
+	tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1,
+	DKIM_VALID_AU=-0.1, DKIM_VALID_EF=-0.1, HTML_MESSAGE=0.001,
+	RCVD_IN_DNSWL_BLOCKED=0.001, RCVD_IN_VALIDITY_RPBL_BLOCKED=0.001,
+	RCVD_IN_ZEN_BLOCKED_OPENDNS=0.001, SPF_PASS=-0.001,
+	T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001,
+	URIBL_DBL_BLOCKED_OPENDNS=0.001, URIBL_ZEN_BLOCKED_OPENDNS=0.001]
+	autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (2048-bit key)
+	header.d=vigilsec.com
+Received: from mail.ietf.org ([50.223.129.194])
+	by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id FCzcFH3p1I3G; Thu,  5 Dec 2024 10:52:05 -0800 (PST)
+Received: from mail3.g24.pair.com (mail3.g24.pair.com [66.39.134.11])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature ECDSA (P-256) server-digest SHA256)
+	(No client certificate requested)
+	by ietfa.amsl.com (Postfix) with ESMTPS id DC4F8C15154E;
+	Thu,  5 Dec 2024 10:52:05 -0800 (PST)
+Received: from mail3.g24.pair.com (localhost [127.0.0.1])
+	by mail3.g24.pair.com (Postfix) with ESMTP id 1EB5E15F86C;
+	Thu,  5 Dec 2024 13:52:05 -0500 (EST)
+Received: from smtpclient.apple (unknown [96.241.2.243])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail3.g24.pair.com (Postfix) with ESMTPSA id 073DC15F873;
+	Thu,  5 Dec 2024 13:52:05 -0500 (EST)
+From: Russ Housley <housley@vigilsec.com>
+Message-Id: <0C6E21AC-26AA-42A4-BBD1-23A44BFB3580@vigilsec.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_1E1F8E84-DE2C-4A3D-BAB7-948BC0B1F876"
+Mime-Version: 1.0 (Mac OS X Mail 16.0 \(3826.200.121\))
+Date: Thu, 5 Dec 2024 13:51:54 -0500
+In-Reply-To: <8B83B314-7721-4BDA-8A7D-246C7BA4255B@gmail.com>
+To: Mahesh Jethanandani <mjethanandani@gmail.com>
+References: 
+ <173317729077.1469194.16775271830828840510@dt-datatracker-5679c9c6d-qbvvv>
+ <8B83B314-7721-4BDA-8A7D-246C7BA4255B@gmail.com>
+X-Mailer: Apple Mail (2.3826.200.121)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=vigilsec.com;
+ h=from:message-id:content-type:mime-version:subject:date:in-reply-to:cc:to:references;
+ s=pair-202402141609; bh=jOMTcFg1GkYhhtu3jc9oY6+o3GCOwK2yI+ujb9DXBxA=;
+ b=MK7Z1pS0Lod1xRvkMUqIwt5Y0cpahNvNcew4xsU15WHsCBtpUMBwSkQDi9hlwPwJiVXNVPDux4Q9eTcL2yuChEHh2Xtr7CiViAo9nYv7NkUfkwVdHruWYdXBSPVhzV5M20ePIT3PW6sMPGuZc4li/ziFCxZ0enzTD80RIj9zkmSC+MJof3z+ilF7QTozmCp5Uo0nyqgVCjc2JTC0LnMzalTqF0koqVSLNokrKbVwP+UUirpwyP/HDAjNZXSYQ/RhCqD52YMCoG5auT1TvBWnwpKNrrZjNAV46qMs6wZsSW7z7CsBOnUEcQI0M1VpbB5VbvbpSlODu/A3nJu0+QIJuA==
+X-Scanned-By: mailmunge 3.11 on 66.39.134.11
+Message-ID-Hash: MDZ5H64BNTHRE24HPSF2UWQTVMA7ZB3G
+X-Message-ID-Hash: MDZ5H64BNTHRE24HPSF2UWQTVMA7ZB3G
+X-MailFrom: housley@vigilsec.com
+X-Mailman-Rule-Misses: dmarc-mitigation; no-senders; approved; emergency;
+ loop; banned-address; member-moderation; header-match-gen-art.ietf.org-0;
+ header-match-gen-art.ietf.org-1; header-match-gen-art.ietf.org-2;
+ nonmember-moderation; administrivia; implicit-dest; max-recipients; max-size;
+ news-moderation; no-subject; digests; suspicious-header
+CC: IETF Gen-ART <gen-art@ietf.org>,
+ draft-ietf-opsawg-ntw-attachment-circuit.all@ietf.org,
+ Last Call <last-call@ietf.org>, opsawg@ietf.org
+X-Mailman-Version: 3.3.9rc6
+Precedence: list
+Subject: =?utf-8?q?=5BGen-art=5D_Re=3A_Genart_last_call_review_of_draft-ietf-opsawg-n?=
+ =?utf-8?q?tw-attachment-circuit-14?=
+List-Id: "GEN-ART: General Area Review Team" <gen-art.ietf.org>
+Archived-At: 
+ <https://mailarchive.ietf.org/arch/msg/gen-art/-u0EifOlgBe20xbWJ3lrQxZLvQ4>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/gen-art>
+List-Help: <mailto:gen-art-request@ietf.org?subject=help>
+List-Owner: <mailto:gen-art-owner@ietf.org>
+List-Post: <mailto:gen-art@ietf.org>
+List-Subscribe: <mailto:gen-art-join@ietf.org>
+List-Unsubscribe: <mailto:gen-art-leave@ietf.org>
+
+
+--Apple-Mail=_1E1F8E84-DE2C-4A3D-BAB7-948BC0B1F876
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+
+
+> On Dec 2, 2024, at 5:34=E2=80=AFPM, Mahesh Jethanandani =
+<mjethanandani@gmail.com> wrote:
+>=20
+> Hi Russ,
+>=20
+> Thanks for the review.
+>=20
+>> On Dec 2, 2024, at 2:08 PM, Russ Housley via Datatracker =
+<noreply@ietf.org <mailto:noreply@ietf.org>> wrote:
+>>=20
+>> Reviewer: Russ Housley
+>> Review result: Almost Ready
+>>=20
+>> I am the assigned Gen-ART reviewer for this draft. The General Area
+>> Review Team (Gen-ART) reviews all IETF documents being processed
+>> by the IESG for the IETF Chair. Please treat these comments just
+>> like any other last call comments.
+>>=20
+>> For more information, please see the FAQ at
+>> <https://wiki.ietf.org/en/group/gen/GenArtFAQ>.
+>>=20
+>> Document: draft-ietf-opsawg-ntw-attachment-circuit-14
+>> Reviewer: Russ Housley
+>> Review Date: 2024-12-02
+>> IETF LC End Date: 2024-12-09
+>> IESG Telechat date: Unknown
+>>=20
+>>=20
+>> Summary: Almost Ready
+>>=20
+>>=20
+>> Major Concerns:  None
+>>=20
+>>=20
+>> Minor Concerns:
+>>=20
+>> Section 7:  The text says:
+>>=20
+>>   ...  These protocols have to use a
+>>   secure transport layer (e.g., SSH [RFC4252], TLS [RFC8446], and =
+QUIC
+>>   [RFC9000]) and have to use mutual authentication.
+>>=20
+>> I assume that NETCONF and RESTCONF REQUIRE a secure transport and =
+mutual
+>> authentication.  Is that correct?  If so, can this be written in a =
+way
+>> that makes it clear that these other protocols already impose these
+>> requirements?
+>=20
+> Yes, NETCONF and RESTCONF require a secure transport, which are =
+satisfied by NETCONF using SSH, and RESTCONF using TLS/QUIC. Not sure of =
+the statement =E2=80=9Cthese other protocols already impose those =
+requirements=E2=80=9D. Can you clarify?
+
+I think it would be more clear to say something like:
+
+  ...  NETCONF and RESTCONF require the use a
+  secure transport layer such as SSH [RFC4252], TLS [RFC8446], or QUIC
+  [RFC9000].  NETCONF and RESTCONFalso require mutual authentication.
+
+Russ
+
+
+
+--Apple-Mail=_1E1F8E84-DE2C-4A3D-BAB7-948BC0B1F876
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"content-type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"overflow-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;"><br =
+id=3D"lineBreakAtBeginningOfMessage"><div><br><blockquote =
+type=3D"cite"><div>On Dec 2, 2024, at 5:34=E2=80=AFPM, Mahesh =
+Jethanandani &lt;mjethanandani@gmail.com&gt; wrote:</div><br =
+class=3D"Apple-interchange-newline"><div><meta http-equiv=3D"Content-Type"=
+ content=3D"text/html; charset=3Dutf-8"><div style=3D"word-wrap: =
+break-word; -webkit-nbsp-mode: space; line-break: after-white-space;">Hi =
+Russ,<div><br></div><div>Thanks for the review.<br><div><br><blockquote =
+type=3D"cite"><div>On Dec 2, 2024, at 2:08 PM, Russ Housley via =
+Datatracker &lt;<a =
+href=3D"mailto:noreply@ietf.org">noreply@ietf.org</a>&gt; =
+wrote:</div><br class=3D"Apple-interchange-newline"><div><div>Reviewer: =
+Russ Housley<br>Review result: Almost Ready<br><br>I am the assigned =
+Gen-ART reviewer for this draft. The General Area<br>Review Team =
+(Gen-ART) reviews all IETF documents being processed<br>by the IESG for =
+the IETF Chair. Please treat these comments just<br>like any other last =
+call comments.<br><br>For more information, please see the FAQ =
+at<br>&lt;<a =
+href=3D"https://wiki.ietf.org/en/group/gen/GenArtFAQ">https://wiki.ietf.or=
+g/en/group/gen/GenArtFAQ</a>&gt;.<br><br>Document: =
+draft-ietf-opsawg-ntw-attachment-circuit-14<br>Reviewer: Russ =
+Housley<br>Review Date: 2024-12-02<br>IETF LC End Date: =
+2024-12-09<br>IESG Telechat date: Unknown<br><br><br>Summary: Almost =
+Ready<br><br><br>Major Concerns: &nbsp;None<br><br><br>Minor =
+Concerns:<br><br>Section 7: &nbsp;The text says:<br><br> &nbsp;&nbsp;... =
+&nbsp;These protocols have to use a<br> &nbsp;&nbsp;secure transport =
+layer (e.g., SSH [RFC4252], TLS [RFC8446], and QUIC<br> =
+&nbsp;&nbsp;[RFC9000]) and have to use mutual authentication.<br><br>I =
+assume that NETCONF and RESTCONF REQUIRE a secure transport and =
+mutual<br>authentication. &nbsp;Is that correct? &nbsp;If so, can this =
+be written in a way<br>that makes it clear that these other protocols =
+already impose =
+these<br>requirements?<br></div></div></blockquote><div><br></div>Yes, =
+NETCONF and RESTCONF require a secure transport, which are satisfied by =
+NETCONF using SSH, and RESTCONF using TLS/QUIC. Not sure of the =
+statement =E2=80=9Cthese other protocols already impose those =
+requirements=E2=80=9D. Can you =
+clarify?</div></div></div></div></blockquote><div><br></div>I think it =
+would be more clear to say something =
+like:</div><div><br></div><div><div>&nbsp; ... &nbsp;NETCONF and =
+RESTCONF require the use a</div><div>&nbsp; secure transport layer such =
+as SSH [RFC4252], TLS [RFC8446], or QUIC</div><div>&nbsp; [RFC9000]. =
+&nbsp;NETCONF and RESTCONFalso require mutual =
+authentication.</div><div><br></div><div>Russ</div></div><div><br></div><b=
+r></body></html>=
+
+--Apple-Mail=_1E1F8E84-DE2C-4A3D-BAB7-948BC0B1F876--
+

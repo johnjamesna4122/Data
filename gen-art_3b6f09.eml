@@ -1,0 +1,190 @@
+Return-Path: <pkyzivat@alum.mit.edu>
+X-Original-To: gen-art@ietfa.amsl.com
+Delivered-To: gen-art@ietfa.amsl.com
+Received: from localhost (localhost [127.0.0.1])
+	by ietfa.amsl.com (Postfix) with ESMTP id 141ADC151083;
+	Wed,  4 Dec 2024 14:16:56 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -2.006
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.006 tagged_above=-999 required=5
+	tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1,
+	DKIM_VALID_AU=-0.1, RCVD_IN_DNSWL_BLOCKED=0.001,
+	RCVD_IN_MSPIKE_H2=-0.001, RCVD_IN_VALIDITY_RPBL_BLOCKED=0.001,
+	RCVD_IN_ZEN_BLOCKED_OPENDNS=0.001, SPF_PASS=-0.001,
+	T_SCC_BODY_TEXT_LINE=-0.01, URIBL_BLOCKED=0.001,
+	URIBL_DBL_BLOCKED_OPENDNS=0.001, URIBL_ZEN_BLOCKED_OPENDNS=0.001]
+	autolearn=ham autolearn_force=no
+Authentication-Results: ietfa.amsl.com (amavisd-new); dkim=pass (1024-bit key)
+	header.d=alum.mit.edu
+Received: from mail.ietf.org ([50.223.129.194])
+	by localhost (ietfa.amsl.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 0uK5b7tVOjLA; Wed,  4 Dec 2024 14:16:52 -0800 (PST)
+Received: from NAM04-BN8-obe.outbound.protection.outlook.com
+ (mail-bn8nam04on2109.outbound.protection.outlook.com [40.107.100.109])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-384) server-signature ECDSA (P-256) server-digest
+ SHA256)
+	(No client certificate requested)
+	by ietfa.amsl.com (Postfix) with ESMTPS id 74840C1840DB;
+	Wed,  4 Dec 2024 14:15:43 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=OCrvzaIF8TD9D9B9JfHzftm3Ba13QMLNU0gQ+X+D48f84ynwBMKTBhIGG1kHXvusYEt2xQ/TRM/k3stVwmCwl2V2NMFdCYWLgRBl+XPswy7uJEXanXN2LBXO5cp+IhNNBxcTJ8ABcgghxtsR/kAROtSM0HaHAVX7w2ZNeTHPj8hHqGpfMNw86nu497BLK3PzQy0CXGKDvXksBJ+thCgI3T2KjeyIZwZFFwAN+R14UPuR32sBogJ3Kbu4oxWQw+8Dz5yc5bco1c+5nIgI+Svlj6IgiXR+FAYX5lkSi2MHsfe3qthVh5uCU3D8Ih5cC0aAL5HAwsYQRZ1w+Xyd7nQwvA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=lzdyETCJSC0BSytYXK1nC7qENfIZBL5cs0SBQ4kYwks=;
+ b=mhbdHyy4iLFzn8G1ny7Zuzip0npKpGzTyXOPg81lOkECBv69mbZR9z61WMNFd6XqFg+zz6Zf3cddVIeCut1LuViaAjbojK/xDKN8H5jROjcwQzNs+MpIM44fpWirhNPirMF2OWnoAalyoyQDQQU84Xg8BsY9Cr4UsQtrfkw4oZSqqjgyzNQvvsa1Y3xfLUHsMkaOQXu+BuMkIQbyPebktTtzLLMP3eAmrtD/BY6eGplTWhsEz5G6k7qW0JUNJtwLp4IhS4m2VL8/CfJIyL9cJK/z4bD0O1tTBplTtaLOUwwgT79qk5P9ApcytuVGoxk1SBHNhtANhSElcBYicLhaJQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 18.7.68.33) smtp.rcpttodomain=ietf.org smtp.mailfrom=alum.mit.edu; dmarc=pass
+ (p=none sp=none pct=100) action=none header.from=alum.mit.edu; dkim=none
+ (message not signed); arc=none (0)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=alum.mit.edu;
+ s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=lzdyETCJSC0BSytYXK1nC7qENfIZBL5cs0SBQ4kYwks=;
+ b=IieXZerlQeMYFYkAKX9MHjXrr1zlAg+qnTgjiJ/LLb0jcdg4bpdNz6mIfT4taRhts5biUrWhIKhDZfEt0CHuW46t859l5wgUoHDBSB50N9LUiswBdfu2x8iOsQig4YbQQvqCPZgzCRVCOTVSJ21CpfXjN5RqF3wQFMb7/d+0i6A=
+Received: from CH2PR18CA0031.namprd18.prod.outlook.com (2603:10b6:610:55::11)
+ by SA1PR12MB7151.namprd12.prod.outlook.com (2603:10b6:806:2b1::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8230.11; Wed, 4 Dec
+ 2024 22:15:40 +0000
+Received: from DS2PEPF00003448.namprd04.prod.outlook.com
+ (2603:10b6:610:55:cafe::95) by CH2PR18CA0031.outlook.office365.com
+ (2603:10b6:610:55::11) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8207.19 via Frontend Transport; Wed,
+ 4 Dec 2024 22:15:38 +0000
+X-MS-Exchange-Authentication-Results: spf=pass (sender IP is 18.7.68.33)
+ smtp.mailfrom=alum.mit.edu; dkim=none (message not signed)
+ header.d=none;dmarc=pass action=none header.from=alum.mit.edu;
+Received-SPF: Pass (protection.outlook.com: domain of alum.mit.edu designates
+ 18.7.68.33 as permitted sender) receiver=protection.outlook.com;
+ client-ip=18.7.68.33; helo=outgoing-alum.mit.edu; pr=C
+Received: from outgoing-alum.mit.edu (18.7.68.33) by
+ DS2PEPF00003448.mail.protection.outlook.com (10.167.17.75) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8230.7 via Frontend Transport; Wed, 4 Dec 2024 22:15:38 +0000
+Received: from [192.168.1.52] (c-76-19-71-248.hsd1.ma.comcast.net
+ [76.19.71.248])
+	(authenticated bits=0)
+        (User authenticated as pkyzivat@ALUM.MIT.EDU)
+	by outgoing-alum.mit.edu (8.14.7/8.12.4) with ESMTP id 4B4MFaAt025666
+	(version=TLSv1/SSLv3 cipher=AES128-GCM-SHA256 bits=128 verify=NOT);
+	Wed, 4 Dec 2024 17:15:37 -0500
+Message-ID: <3b6f09a5-7104-42ca-95fc-f4f37cc9253a@alum.mit.edu>
+Date: Wed, 4 Dec 2024 17:15:36 -0500
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+From: Paul Kyzivat <pkyzivat@alum.mit.edu>
+To: draft-ietf-jmap-webpush-vapid.all@ietf.org, jmap@ietf.org
+Content-Language: en-US
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: DS2PEPF00003448:EE_|SA1PR12MB7151:EE_
+X-MS-Office365-Filtering-Correlation-Id: b5504aa4-a68b-4798-1c39-08dd14b12ee8
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: 
+	BCL:0;ARA:13230040|1800799024|4022899009|41320700013|36860700013|82310400026|376014;
+X-Microsoft-Antispam-Message-Info: 
+	=?utf-8?B?TEQ0UENpTFA2ZTNaSWtxN0l2bGs5enFucUF1cFh2RVBxdzRsQ21DTUNMUGlz?=
+ =?utf-8?B?Wkl6VExtSkZhdEZkMm5Zd05oMVI2QU5uMjhmbGhsOFNjQi81NnQ4eG9ObEZD?=
+ =?utf-8?B?WHlMdzQ2MFRCbDMyZ1RUcWNGSjlydVlIbGNEbmR1MDA1d29wZzIwTWQ2VVMr?=
+ =?utf-8?B?SVBkcE9lalVGYXVOY0dIbkFGb0ltNUplQmxPQlRubllwYWMyS256WE1GeG1r?=
+ =?utf-8?B?V0NaSmZVcUFDc05lbDBIZXpJT1UrS2VhaXdPYStIYUJFMTIvN2tRRW4ra0JT?=
+ =?utf-8?B?ZHdvck9ITEJzOGVmOVlINU4rNHhHSEl0bmM2SnNCSU16OURnYXpRSVNBT1F3?=
+ =?utf-8?B?Y3dMTmtIMjVXR0FUS05rdE1OT0RzZ0M0RXJWNlkyOWlPVnFaK1VBcUZTZStr?=
+ =?utf-8?B?UjBuSEwwc25BTS9JWHJaaVdqOHp4aTFYZjJ4ZmhNSkZadVNML0dYeVBJUEVT?=
+ =?utf-8?B?M2R6M3RNV3ZnV05mL1J1VDFqRk8wek5KciswVjgyRmpJK0htcnFXQXROVHJB?=
+ =?utf-8?B?VFZmSXY1cjRzcmJKVFhHWUZKN0FFSkR1WG1zNEEvMTlCd1NWOWtOa0Vnek03?=
+ =?utf-8?B?UTczbkh0YnJXZnpzbm54TDVoMTJIZEkrUXFBVUpsa0I4aGZpelhNU1BKVHVv?=
+ =?utf-8?B?QmR3c21uSW9Iamt1ZmZqTWVNKzhZL1VmTXZRenBFeVIzWi9VSnFUVGpIemFN?=
+ =?utf-8?B?b2tFdEplYVMwY0t1aStrSFVSSXFIQm9yb3JGdFBUMzdIZ1FTcEtTRDZjTENK?=
+ =?utf-8?B?SVMwdm8wdG5LU1hSMGVVc1l5bjArajh2azlNVTRHaFlsdElScGRNOHE1NTJn?=
+ =?utf-8?B?VUxoZlBFNk5WRXRGcjZ0bFo4b0N6R3MvU3dtTDZCeHJRWlV0eEsyWTMwa01t?=
+ =?utf-8?B?Z2ZTRWpoVEM5OWZSM2U4TlRlS2ZOT0tJRXAzeXJlN21salc5L3FEaEYwWERI?=
+ =?utf-8?B?Z3FuclFxdTQ5by9qcDRrbDdpWWtqWlRWU1hKODRPVEwrTStLeCtCS2ZiV1Vr?=
+ =?utf-8?B?THArSXltTFRwWlF1bjBqd3VZbEgxcUFONG9MaWhRNVZITSt5NkVmQ3hrYkJB?=
+ =?utf-8?B?dnF3ajhqLzc3K25zMzBCakEzanVZR1FlV3diaWh3dEhEMGg5Zm14Uks1UThh?=
+ =?utf-8?B?OW5LZ3pKeW1MN24waVR2Y0FHcVFTUzl2bEFxM2EwcUo2TEhLUTRvUHBFMExN?=
+ =?utf-8?B?V3kxaTJZMHFyWm5WVFBkZjhJZm5iVlFIeTh2TFNmZGwwWTRoeWpHUVcvNzA5?=
+ =?utf-8?B?OVRVQkRMYXFjaVhnS0dQVTZzT3ErY3ZPeEZEL1RwL2xwZjhtQUdJNTJnWmND?=
+ =?utf-8?B?UGVJUm12NThSNFFwbHgzQ1A4U2FnZjBWVUw0WHd4NFVPQ2FXOE1DODU4UmVV?=
+ =?utf-8?B?OTZRM2VNdzBrNW45Nkl0REE2L01sVnZXZ21tL296OEJMbzhPTEQwbzdhTWk3?=
+ =?utf-8?B?VTNKcEwwTmQzc1RaTEZRU1NwMjNaakljUkdEM3NSSFNHR0x2a3FxV0w0Y0dV?=
+ =?utf-8?B?NFZiR1RYSFNFZG93akdNNmlpQndBSk9jWnlqN2k2YjZobVZRNU82MTVJdkdT?=
+ =?utf-8?B?YWY4cnFwOXZiV2V1NEdyZGx1N2lEdFZGc3dENFQrMnRzZDBUblZlYU13UkNR?=
+ =?utf-8?B?aTFCTjJoU1MrY1hsUStLeDkyeHBmUDRPUHhmWkVkd0dUSGxPOHVpWXlURHYv?=
+ =?utf-8?B?UlVPdTVpUlJZN0ljOTJuenFUd05jRnJqY3Mwb1MwWXFVeGFHbFNlVGhERWw5?=
+ =?utf-8?B?Y0hZNVB5QnJkNGZXZmMrNjdWWXlMeDlFdWdONlNXME4yeDBMNHZjWG9KbWI2?=
+ =?utf-8?B?MEpWWmFHc1pBZEZQUnZqa1dEZHQzL2t1QVRTTmMxczFJUGR2bTNldCsxRkhB?=
+ =?utf-8?B?T2Voc1I5UG16eVBTd3ZBdkQ2VEl3amlvTzRQMWRWdll2U0VLVlFlZmdRMyt4?=
+ =?utf-8?Q?3TET/Iy55FSow08E4cGJcrZEbNd5ZBek?=
+X-Forefront-Antispam-Report: 
+	CIP:18.7.68.33;CTRY:US;LANG:en;SCL:1;SRV:;IPV:CAL;SFV:NSPM;H:outgoing-alum.mit.edu;PTR:outgoing-alum.mit.edu;CAT:NONE;SFS:(13230040)(1800799024)(4022899009)(41320700013)(36860700013)(82310400026)(376014);DIR:OUT;SFP:1102;
+X-OriginatorOrg: alum.mit.edu
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Dec 2024 22:15:38.2240
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 
+ b5504aa4-a68b-4798-1c39-08dd14b12ee8
+X-MS-Exchange-CrossTenant-Id: 3326b102-c043-408b-a990-b89e477d582f
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: 
+ TenantId=3326b102-c043-408b-a990-b89e477d582f;Ip=[18.7.68.33];Helo=[outgoing-alum.mit.edu]
+X-MS-Exchange-CrossTenant-AuthSource: 
+	DS2PEPF00003448.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR12MB7151
+Message-ID-Hash: BWQ2PZDSJECH5OBMTGR4W6HSRKTOU7R2
+X-Message-ID-Hash: BWQ2PZDSJECH5OBMTGR4W6HSRKTOU7R2
+X-MailFrom: pkyzivat@alum.mit.edu
+X-Mailman-Rule-Misses: dmarc-mitigation; no-senders; approved; emergency;
+ loop; banned-address; member-moderation; header-match-gen-art.ietf.org-0;
+ header-match-gen-art.ietf.org-1; header-match-gen-art.ietf.org-2;
+ nonmember-moderation; administrivia; implicit-dest; max-recipients; max-size;
+ news-moderation; no-subject; digests; suspicious-header
+CC: General Area Review Team <gen-art@ietf.org>, last-call@ietf.org
+X-Mailman-Version: 3.3.9rc6
+Precedence: list
+Subject: =?utf-8?q?=5BGen-art=5D_Gen-ART_Last_Call_review_of_draft-ietf-jmap-webpush-?=
+ =?utf-8?q?vapid-05_=5BRESEND=5D?=
+List-Id: "GEN-ART: General Area Review Team" <gen-art.ietf.org>
+Archived-At: 
+ <https://mailarchive.ietf.org/arch/msg/gen-art/6nbSbvwAcxjoDOvgRBmtSKbnTJ8>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/gen-art>
+List-Help: <mailto:gen-art-request@ietf.org?subject=help>
+List-Owner: <mailto:gen-art-owner@ietf.org>
+List-Post: <mailto:gen-art@ietf.org>
+List-Subscribe: <mailto:gen-art-join@ietf.org>
+List-Unsubscribe: <mailto:gen-art-leave@ietf.org>
+
+[Resending with correction to one of the email addresses]
+
+I am the assigned Gen-ART reviewer for this draft. The General Area
+Review Team (Gen-ART) reviews all IETF documents being processed
+by the IESG for the IETF Chair.  Please treat these comments just
+like any other last call comments.
+
+For more information, please see the FAQ at
+
+<https://trac.ietf.org/trac/gen/wiki/GenArtfaq>.
+
+Document: draft-ietf-jmap-webpush-vapid-05
+Reviewer: Paul Kyzivat
+Review Date: 2024-12-04
+IETF LC End Date: 2024-12-06
+IESG Telechat date: ?
+
+Summary:
+
+This draft is ready for publication as a Standards Track RFC.
+
+This document gets the job done concisely. I could find no issues with it.
+
+_______________________________________________
+Gen-art mailing list -- gen-art@ietf.org
+To unsubscribe send an email to gen-art-leave@ietf.org
+

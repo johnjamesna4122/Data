@@ -1,0 +1,412 @@
+Return-Path: <stpeter@stpeter.im>
+X-Original-To: clouds@core3.amsl.com
+Delivered-To: clouds@core3.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by core3.amsl.com (Postfix)
+ with ESMTP id 0AFB73A6CD7 for <clouds@core3.amsl.com>;
+ Wed, 16 Feb 2011 09:18:53 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -102.199
+X-Spam-Level: 
+X-Spam-Status: No,
+ score=-102.199 tagged_above=-999 required=5 tests=[AWL=-0.200, BAYES_00=-2.599,
+ J_CHICKENPOX_44=0.6, USER_IN_WHITELIST=-100]
+Received: from mail.ietf.org ([64.170.98.32]) by localhost (core3.amsl.com
+ [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id rxP5CDiVnMiF for
+ <clouds@core3.amsl.com>; Wed, 16 Feb 2011 09:18:52 -0800 (PST)
+Received: from stpeter.im (stpeter.im [207.210.219.233]) by core3.amsl.com
+ (Postfix) with ESMTP id D0C1F3A6C38 for <clouds@ietf.org>;
+ Wed, 16 Feb 2011 09:18:51 -0800 (PST)
+Received: from leavealone.cisco.com (72-163-0-129.cisco.com [72.163.0.129])
+ (Authenticated sender: stpeter) by stpeter.im (Postfix) with ESMTPSA id
+ 83568400F6 for <clouds@ietf.org>; Wed, 16 Feb 2011 10:37:27 -0700 (MST)
+Message-ID: <4D5C0714.6010108@stpeter.im>
+Date: Wed, 16 Feb 2011 10:19:16 -0700
+From: Peter Saint-Andre <stpeter@stpeter.im>
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US;
+ rv:1.9.2.13) Gecko/20101207 Thunderbird/3.1.7
+MIME-Version: 1.0
+To: clouds@ietf.org
+References: <AANLkTinm925CP5KDCDqyXEOKVbd5g0QQx1AdTeHt0qFQ@mail.gmail.com><14584D6EE26B314187A4F68BA206060006933C32@ASHEVS008.mcilink.com>	<4D55956D.7050201@it.uc3m.es>
+ <62B843A2D44446C2B7C8B187F47A957F@china.huawei.com>
+In-Reply-To: <62B843A2D44446C2B7C8B187F47A957F@china.huawei.com>
+X-Enigmail-Version: 1.1.1
+OpenPGP: url=http://www.saint-andre.com/me/stpeter.asc
+Content-Type: multipart/signed; protocol="application/pkcs7-signature";
+ micalg=sha1; boundary="------------ms030406010806090706040702"
+Subject: Re: [clouds] Thoughts on ClooudOPS
+X-BeenThere: clouds@ietf.org
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: Clouds pre-BOF discussion list <clouds.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/listinfo/clouds>,
+ <mailto:clouds-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/clouds>
+List-Post: <mailto:clouds@ietf.org>
+List-Help: <mailto:clouds-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/clouds>,
+ <mailto:clouds-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Wed, 16 Feb 2011 17:18:53 -0000
+
+This is a cryptographically signed message in MIME format.
+
+--------------ms030406010806090706040702
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Sorry about that, I was travelling and then catching up afterward.
+
+This list will close very soon because I will send a request to the
+Secretariat *right now*.
+
+Peter
+
+On 2/16/11 10:17 AM, Spencer Dawkins wrote:
+> Just to mention one more issue ...
+>=20
+> Peter Saint-Andre said he would request that the IETF Secretariat close=
+
+> this mailing list two weeks ago.
+>=20
+> If you guys would like to have a place to discuss CloudOPS (or Data
+> Center Ops, or ...) it would probably be great if you requested a
+> mailing list for that. I'm thinking that Ron Bonica would be the right
+> contact for that.
+>=20
+> If you guys would like to have a place to discuss Virtual Desktop stuff=
+,
+> Peter said he might be willing to create a mailing list for that, so he=
+
+> would be an excellent choice as the contact for that.
+>=20
+> I'm kind of surprised that this mailing list is still working at all :-=
+)
+>=20
+> Thanks,
+>=20
+> Spencer
+>=20
+> ----- Original Message ----- From: "marcelo bagnulo braun"
+> <marcelo@it.uc3m.es>
+> To: <clouds@ietf.org>
+> Sent: Friday, February 11, 2011 2:00 PM
+> Subject: Re: [clouds] Thoughts on ClooudOPS
+>=20
+>=20
+> Hi,
+>=20
+> just to point out some issues...
+>=20
+> below...
+>=20
+> El 11/02/11 20:48, So, Ning escribi=C3=B3:
+>>
+>> Bhumip and all,
+>>
+>> As discussed in this morning=E2=80=99s call, here are my personal view=
+s on the
+>> proposed CloudOPS WG and the related drafts.
+>>
+>> Frameworks, high-level requirements, and best practices descriptions
+>> on cloud infrastructure that impact multiple IETF protocols under
+>> different areas and WGs,
+>>
+> If it is an OPS area WG what you are proposing, then the work you
+> propose should fall into OPS, don't you think? (as opposed to multiple
+> areas)
+> If the work you propose fall into other WG, then it should go to the
+> other WGs, right?
+>=20
+>=20
+>> and/or protocols outside of IETF, belong to the CloudOPS WG.
+>>
+> If protocols are outside the IETF, then they shouldn't be defined in th=
+e
+> IETF, don't you agree?
+>=20
+>> New protocols that impact multiple IETF protocols under different
+>> areas and WGs,
+>>
+> similar comment here, if this is an OPS WG, then it should work within
+> the OPS area scope
+> again, if the protocol is being defined in another WG, then the work
+> should be done in that WG.
+>>
+>> and/or protocols outside of IETF, also belong to the CloudOPS WG.
+>>
+> work outside the IETF, should be done, well, outside the IETF
+>=20
+>> ARMD WG=E2=80=99s work is very focused and much needed, and I voiced m=
+y
+>> support for its establishment. However, I see difficulties in
+>> broadening its charter to make it a single and only default CloudOPS
+>> WG. All the non-ARMD related drafts will become distraction and cause
+>> confusion.
+>>
+> i agree you should leave ARMD alone.
+> It is well defined and well scoped problem and it is good as it
+> currently is
+>=20
+>> In my humble opinion, the following drafts belong to the CloudOPS WG.
+>> Many of them were presented at Cloud BoF in IETF79, and are in the
+>> process of getting updated for IETF80. Several are new submissions
+>> that are recently uploaded. I think what we have here is more than one=
+
+>> and half hours of meeting time JI really do not want to inflict the
+>> pain on my ARMD friends.
+>>
+> I don't think you are approaching this from the right perspective.
+> This is not about draft, is about real problems and concrete items that=
+
+> you want to work on.
+> You should work on defining a charter, not in voicing for drafts that
+> should be included in a WG that doesn't exist yet.
+>=20
+> In addition, all this long list seems to cover a too wide variety of
+> topics.
+> I would reccomend to be less ambitious, define a much scoped work, by
+> defining a charter (As opposed to write drafts)
+>=20
+> my two cents
+>=20
+> regards, marcelo
+>=20
+>=20
+>=20
+>>    1. Cloud Reference Framework
+>>    2. Cloud Security Framework
+>>    3. VPN Extension for Cloud Services
+>>    4. Network Abstraction for Enterprise and SP Class Cloud
+>>    5. Protocol Considerations for Workload Mobility in Clouds
+>>    6. Service Management for Virtualized Cloud
+>>    7. Virtual Network Management Information Model
+>>    8. Network Probability Requirements and Models
+>>    9. Syslog Extension for Cloud Using Syslog Structured Data
+>>   10. Virtual Resource Management (VRM) in Clouds
+>>
+>> Best regards,
+>>
+>> Ning So
+>>
+>> Network Evolution Planning
+>>
+>> Verizon, Inc.
+>>
+>> (office) 972-729-7905
+>>
+>> (Cell) 972-955-0914
+>>
+>> ----------------------------------------------------------------------=
+--
+>>
+>> *From:*clouds-bounces@ietf.org [mailto:clouds-bounces@ietf.org] *On
+>> Behalf Of *Bhumip Khasnabish
+>> *Sent:* Thursday, February 10, 2011 11:46 PM
+>> *To:* clouds@ietf.org
+>> *Subject:* [clouds] Conf call on Friday [11-February-2011] at 10 AM
+>> US/NY time
+>>
+>> Please plan to join a conf call on
+>> *Friday, 11-Feb.-2011 starting from 10 AM ET* (New York, USA time)
+>>
+>> to get updates on the Clouds initiatives/activities.
+>>
+>> [you may find the current NY/USA time (from your location) at the
+>> following URL:
+>> http://www.worldtimeserver.com/current_time_in_US-NY.aspx ].
+>>
+>>
+>> Dial in number: *US Toll-free +1-866-710-5490
+>> *If the toll-free number does not work, pls use *+001-203-875-8973*
+>> *Passcode: 204 1744*
+>>
+>> (Thanks to Mr. Ning So for providing the conf bridge).
+>>
+>> **
+>>
+>> *_Proposed Agenda:_*
+>>
+>> **
+>>
+>>    1. VEPC draft update -- Ning et al
+>>    2. CloudLog draft update -- Gene and Sam
+>>    3. Data Center Operations (DCOPS) proposal update -- Ross (with
+>>       info from Ron, if any)
+>>    4. draft-rfc-seamless-Cloud-masum-01.txt
+>>
+>> <http://trac.tools.ietf.org/area/app/trac/attachment/wiki/Clouds/draft=
+-rfc-seamless-Cloud-masum-01.txt>(27.1
+>>
+>>       KB) =E2=80=93 Masum et al, /Network Abstraction for Enterprise a=
+nd SP
+>>       class Cloud: Seamless Cloud Abstraction and Interfaces /
+>>    5. Protocol Considerations for Workload Mobility in Clouds.txt
+>>
+>> <http://trac.tools.ietf.org/area/app/trac/attachment/wiki/Clouds/Proto=
+col%20Considerations%20for%20Workload%20Mobility%20in%20Clouds.txt>(21.5
+>>
+>>       KB) - Masum et al, /Protocol Considerations for Workload
+>>       Mobility in Clouds /
+>>    6. Karavettil-et-al-IETF-Cloud-Security-Framework-11Feb2011_v2.pdf
+>>
+>> <http://trac.tools.ietf.org/area/app/trac/attachment/wiki/Clouds/Karav=
+ettil-et-al-IETF-Cloud-Security-Framework-11Feb2011_v2.pdf>(0.6
+>>
+>>       MB) =E2=80=93 Suren et al, /updated cloud security framework (CS=
+F) slides /
+>>    7. draft-yokota-cloud-service-mobility-01.txt
+>>
+>> <http://trac.tools.ietf.org/area/app/trac/attachment/wiki/Clouds/draft=
+-yokota-cloud-service-mobility-01.txt>(42.0
+>>
+>>       KB) =E2=80=93 Mr. Yokota et al, /Service Management for Virtuali=
+zed
+>>       Networks /
+>>    8. Virtual Desktop Infrastructure (VDI) Requirements and Survey
+>>       update =E2=80=93 Mr. Wang and Mr. Ma
+>>    9. Cloud (client and network sides) APIs update - Sam
+>>   10. VRM update -- Mr Chu et al
+>>   11. VDI proposal expectations (further guidance) -- Peter Saint-Andr=
+e
+>>   12. VDI proposal development -- TBD
+>>   13. Any other topics?
+>>
+>> As always, all of the drafts and presentations are available at the
+>> following URL: http://trac.tools.ietf.org/area/app/trac/wiki/Clouds
+>>
+>> *Next conf call*will be held on
+>>
+>> *_Friday-18-February-2011_**starting from 10 AM ET*(New York, USA time=
+).
+>>
+>> *Many Thanks for Participation and Contributions.*
+>>
+>> Best Regards.
+>>
+>> Bhumip Khasnabish (Mobile:+001-781-752-8003, vumip1 at gmail.com
+>> <mailto:vumip1%20at%20gmail.com>)
+>> http://www.linkedin.com/in/bhumipkhasnabish
+>>
+
+
+--------------ms030406010806090706040702
+Content-Type: application/pkcs7-signature; name="smime.p7s"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="smime.p7s"
+Content-Description: S/MIME Cryptographic Signature
+
+MIAGCSqGSIb3DQEHAqCAMIACAQExCzAJBgUrDgMCGgUAMIAGCSqGSIb3DQEHAQAAoIITzjCC
+BjQwggQcoAMCAQICASMwDQYJKoZIhvcNAQELBQAwfTELMAkGA1UEBhMCSUwxFjAUBgNVBAoT
+DVN0YXJ0Q29tIEx0ZC4xKzApBgNVBAsTIlNlY3VyZSBEaWdpdGFsIENlcnRpZmljYXRlIFNp
+Z25pbmcxKTAnBgNVBAMTIFN0YXJ0Q29tIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTA3
+MTAyNDIxMDMzM1oXDTE3MTAyNDIxMDMzM1owgYwxCzAJBgNVBAYTAklMMRYwFAYDVQQKEw1T
+dGFydENvbSBMdGQuMSswKQYDVQQLEyJTZWN1cmUgRGlnaXRhbCBDZXJ0aWZpY2F0ZSBTaWdu
+aW5nMTgwNgYDVQQDEy9TdGFydENvbSBDbGFzcyAzIFByaW1hcnkgSW50ZXJtZWRpYXRlIENs
+aWVudCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALmjSW4SPiDKlAinvVeL
+ZOVfItiuP1aRHL530E7QUc9icCwL33+PH+Js1HAh8CgWFl34sOxx1FJyS/C4VLPRsqDfP72j
+tzCVUAL0DAxZ7wgzQvFz7x61jGxfhYhqYb1+PPOLkYBbkRIrPMg3dLEdKmXIYJYXDH+mB/V/
+jLo73/Kb7h/rNoNg/oHHSv5Jolyvp5IY2btfcTBfW/telEFj5rDTX2juTvZ3Qhf3XQX5ca3Q
+7A10zrUV/cWJOJ7F5RltbEIaboZmX5JBUb3FhUiAdBotehAX6DbDOuYoJtVxmGof6GuVGcPo
+98K4TJf8FHo+UA9EOVDp/W7fCqKT4sXk/XkCAwEAAaOCAa0wggGpMA8GA1UdEwEB/wQFMAMB
+Af8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBR7iZySlyShhEcCy3T8LvSs3DLl8zAfBgNV
+HSMEGDAWgBROC+8apEBbpRdphzDKNGhD0EGu8jBmBggrBgEFBQcBAQRaMFgwJwYIKwYBBQUH
+MAGGG2h0dHA6Ly9vY3NwLnN0YXJ0c3NsLmNvbS9jYTAtBggrBgEFBQcwAoYhaHR0cDovL3d3
+dy5zdGFydHNzbC5jb20vc2ZzY2EuY3J0MFsGA1UdHwRUMFIwJ6AloCOGIWh0dHA6Ly93d3cu
+c3RhcnRzc2wuY29tL3Nmc2NhLmNybDAnoCWgI4YhaHR0cDovL2NybC5zdGFydHNzbC5jb20v
+c2ZzY2EuY3JsMIGABgNVHSAEeTB3MHUGCysGAQQBgbU3AQIBMGYwLgYIKwYBBQUHAgEWImh0
+dHA6Ly93d3cuc3RhcnRzc2wuY29tL3BvbGljeS5wZGYwNAYIKwYBBQUHAgEWKGh0dHA6Ly93
+d3cuc3RhcnRzc2wuY29tL2ludGVybWVkaWF0ZS5wZGYwDQYJKoZIhvcNAQELBQADggIBAGpd
+SbdLFMhirxK37V4gE00+uW74UdAXtDgQI3AsRZWtaRtKHgAxFBSteqz4kDkeAjH/1b+K8tQR
+6cxSI2nho7qOaPW/UpzOfSS/MeKK/9vfM2lfs+uItXH7LWtvS9wD1erfH1a+BXHCrCp4LA1l
+fADDhRIiGTSS3i0Zu5xV3INNRHrCCCl6patltQ8RZTqzDMri7ombgIxjN51Zo7xV77EZcThV
+0GA8iIN+7T53uHhUJpjfLIztHs/69OclRvHux9hCflfOm7GY5Sc4nqjfES+5XPArGGWiQSEk
+ez37QfXqsxO3oCHK4b3DFZysG4uyOuC/WL80ab3muQ3tgwjBhq0D3JZN5kvu5gSuNZPa1WrV
+hEgXkd6C7s5stqB6/htVpshG08jRz9DEutGM9oKQ1ncTivbfPNx7pILoHWvvT7N5i/puVoNu
+bPUmLXh/2wA6wzAzuuoONiIL14Xpw6jLSnqpaLWElo2yTIFZ/CU/nCvvpW1Dj1457P3Ci9bD
+0RPkWSR+CuucpgxrEmaw4UOLxflzuYYaq1RJwygOO5K0s2bAWOcXpgteyUOnQ3d/EjJAWRri
+2v0ubiq+4H3KUOMlbznlPAY/1T8YyyJPM88+Ueahe/AW1zoUwZayNcTnuM7cq6yBV8Wr3GOI
+LFXhtT0UVuJLChPMJKVKVsa7qNorlLkMMIIGxzCCBa+gAwIBAgICAIswDQYJKoZIhvcNAQEF
+BQAwgYwxCzAJBgNVBAYTAklMMRYwFAYDVQQKEw1TdGFydENvbSBMdGQuMSswKQYDVQQLEyJT
+ZWN1cmUgRGlnaXRhbCBDZXJ0aWZpY2F0ZSBTaWduaW5nMTgwNgYDVQQDEy9TdGFydENvbSBD
+bGFzcyAzIFByaW1hcnkgSW50ZXJtZWRpYXRlIENsaWVudCBDQTAeFw0xMDEwMTQwMTM2MzRa
+Fw0xMjEwMTQxMjAxMDdaMIHAMSAwHgYDVQQNExcyNzQ1ODEtOU5YMDRxeExEYjBvNDY5VDEL
+MAkGA1UEBhMCVVMxETAPBgNVBAgTCENvbG9yYWRvMQ8wDQYDVQQHEwZEZW52ZXIxLDAqBgNV
+BAsTI1N0YXJ0Q29tIFRydXN0ZWQgQ2VydGlmaWNhdGUgTWVtYmVyMRowGAYDVQQDExFQZXRl
+ciBTYWludC1BbmRyZTEhMB8GCSqGSIb3DQEJARYSc3RwZXRlckBzdHBldGVyLmltMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuERvnrkpQTx9wbJfgxbNKEYvt0IilecZRUM6
+wrbCzIUPCocuYhaAJcQoqIyHaKybPQ7f+DIGIAolAa3dHnNdlsXP2smTft/ZNpj10PIG5bil
+NAqLUYwmLJaEaqY7BMW8423U3blW43/luLJk/Pq4OsWcw7AK3LeVh1U/HOgqhin26N3h72X1
+nbLEpZFrgcp8egmWtXLCbLBDMqUK3j6wjLldni79muzYEVqU0A5GqSeb8Wc4kIx8VI5yL24J
+KzinG2iVRP5ZDEbOZETzBXJabUsV56XSxqPG9DK6ke+ybCiL/wKV1HFqdtFB1y25lfvHgOP2
+gyEApBKEDNjgLmKyyQIDAQABo4IC+zCCAvcwCQYDVR0TBAIwADALBgNVHQ8EBAMCBLAwHQYD
+VR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMB0GA1UdDgQWBBS2EW2iNB+g0EibKJLBdv8I
+eLovVDAfBgNVHSMEGDAWgBR7iZySlyShhEcCy3T8LvSs3DLl8zAdBgNVHREEFjAUgRJzdHBl
+dGVyQHN0cGV0ZXIuaW0wggFCBgNVHSAEggE5MIIBNTCCATEGCysGAQQBgbU3AQICMIIBIDAu
+BggrBgEFBQcCARYiaHR0cDovL3d3dy5zdGFydHNzbC5jb20vcG9saWN5LnBkZjA0BggrBgEF
+BQcCARYoaHR0cDovL3d3dy5zdGFydHNzbC5jb20vaW50ZXJtZWRpYXRlLnBkZjCBtwYIKwYB
+BQUHAgIwgaowFBYNU3RhcnRDb20gTHRkLjADAgEBGoGRTGltaXRlZCBMaWFiaWxpdHksIHNl
+ZSBzZWN0aW9uICpMZWdhbCBMaW1pdGF0aW9ucyogb2YgdGhlIFN0YXJ0Q29tIENlcnRpZmlj
+YXRpb24gQXV0aG9yaXR5IFBvbGljeSBhdmFpbGFibGUgYXQgaHR0cDovL3d3dy5zdGFydHNz
+bC5jb20vcG9saWN5LnBkZjBjBgNVHR8EXDBaMCugKaAnhiVodHRwOi8vd3d3LnN0YXJ0c3Ns
+LmNvbS9jcnR1My1jcmwuY3JsMCugKaAnhiVodHRwOi8vY3JsLnN0YXJ0c3NsLmNvbS9jcnR1
+My1jcmwuY3JsMIGOBggrBgEFBQcBAQSBgTB/MDkGCCsGAQUFBzABhi1odHRwOi8vb2NzcC5z
+dGFydHNzbC5jb20vc3ViL2NsYXNzMy9jbGllbnQvY2EwQgYIKwYBBQUHMAKGNmh0dHA6Ly93
+d3cuc3RhcnRzc2wuY29tL2NlcnRzL3N1Yi5jbGFzczMuY2xpZW50LmNhLmNydDAjBgNVHRIE
+HDAahhhodHRwOi8vd3d3LnN0YXJ0c3NsLmNvbS8wDQYJKoZIhvcNAQEFBQADggEBADVtbXJG
+tKAr55xc/OUM546gXUybI72Bank0w739Mv+9BBNtq9rMEvCnLmSKhBi76c1mdXh6zXs8RQDo
+6nR/aPabE3llF2T4z80smi9jfnl3y9dpu9TcgDoqDLZ7a2lBlW656XAAQzHjvLp2MC7/mxlg
+PYH2axa+q40mAYM20GbNsAEGbWQT1IqIh0BcLLsgbaMJHbyG/57zd9JLyMX3Vry1L1fJRQr3
+GeLxMV5RtxN+mBgxrwFz/cOc09COiFExlsHgekpB5O43gqsAU16MXypyoSt4MrSfKTMHIGx6
+2RF/M6vqUlvhi28gk2ZUvQ/+OX5+gjcZyooEzAAn4RuOKNswggbHMIIFr6ADAgECAgIAizAN
+BgkqhkiG9w0BAQUFADCBjDELMAkGA1UEBhMCSUwxFjAUBgNVBAoTDVN0YXJ0Q29tIEx0ZC4x
+KzApBgNVBAsTIlNlY3VyZSBEaWdpdGFsIENlcnRpZmljYXRlIFNpZ25pbmcxODA2BgNVBAMT
+L1N0YXJ0Q29tIENsYXNzIDMgUHJpbWFyeSBJbnRlcm1lZGlhdGUgQ2xpZW50IENBMB4XDTEw
+MTAxNDAxMzYzNFoXDTEyMTAxNDEyMDEwN1owgcAxIDAeBgNVBA0TFzI3NDU4MS05TlgwNHF4
+TERiMG80NjlUMQswCQYDVQQGEwJVUzERMA8GA1UECBMIQ29sb3JhZG8xDzANBgNVBAcTBkRl
+bnZlcjEsMCoGA1UECxMjU3RhcnRDb20gVHJ1c3RlZCBDZXJ0aWZpY2F0ZSBNZW1iZXIxGjAY
+BgNVBAMTEVBldGVyIFNhaW50LUFuZHJlMSEwHwYJKoZIhvcNAQkBFhJzdHBldGVyQHN0cGV0
+ZXIuaW0wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4RG+euSlBPH3Bsl+DFs0o
+Ri+3QiKV5xlFQzrCtsLMhQ8Khy5iFoAlxCiojIdorJs9Dt/4MgYgCiUBrd0ec12Wxc/ayZN+
+39k2mPXQ8gbluKU0CotRjCYsloRqpjsExbzjbdTduVbjf+W4smT8+rg6xZzDsArct5WHVT8c
+6CqGKfbo3eHvZfWdssSlkWuBynx6CZa1csJssEMypQrePrCMuV2eLv2a7NgRWpTQDkapJ5vx
+ZziQjHxUjnIvbgkrOKcbaJVE/lkMRs5kRPMFclptSxXnpdLGo8b0MrqR77JsKIv/ApXUcWp2
+0UHXLbmV+8eA4/aDIQCkEoQM2OAuYrLJAgMBAAGjggL7MIIC9zAJBgNVHRMEAjAAMAsGA1Ud
+DwQEAwIEsDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwHQYDVR0OBBYEFLYRbaI0
+H6DQSJsoksF2/wh4ui9UMB8GA1UdIwQYMBaAFHuJnJKXJKGERwLLdPwu9KzcMuXzMB0GA1Ud
+EQQWMBSBEnN0cGV0ZXJAc3RwZXRlci5pbTCCAUIGA1UdIASCATkwggE1MIIBMQYLKwYBBAGB
+tTcBAgIwggEgMC4GCCsGAQUFBwIBFiJodHRwOi8vd3d3LnN0YXJ0c3NsLmNvbS9wb2xpY3ku
+cGRmMDQGCCsGAQUFBwIBFihodHRwOi8vd3d3LnN0YXJ0c3NsLmNvbS9pbnRlcm1lZGlhdGUu
+cGRmMIG3BggrBgEFBQcCAjCBqjAUFg1TdGFydENvbSBMdGQuMAMCAQEagZFMaW1pdGVkIExp
+YWJpbGl0eSwgc2VlIHNlY3Rpb24gKkxlZ2FsIExpbWl0YXRpb25zKiBvZiB0aGUgU3RhcnRD
+b20gQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkgUG9saWN5IGF2YWlsYWJsZSBhdCBodHRwOi8v
+d3d3LnN0YXJ0c3NsLmNvbS9wb2xpY3kucGRmMGMGA1UdHwRcMFowK6ApoCeGJWh0dHA6Ly93
+d3cuc3RhcnRzc2wuY29tL2NydHUzLWNybC5jcmwwK6ApoCeGJWh0dHA6Ly9jcmwuc3RhcnRz
+c2wuY29tL2NydHUzLWNybC5jcmwwgY4GCCsGAQUFBwEBBIGBMH8wOQYIKwYBBQUHMAGGLWh0
+dHA6Ly9vY3NwLnN0YXJ0c3NsLmNvbS9zdWIvY2xhc3MzL2NsaWVudC9jYTBCBggrBgEFBQcw
+AoY2aHR0cDovL3d3dy5zdGFydHNzbC5jb20vY2VydHMvc3ViLmNsYXNzMy5jbGllbnQuY2Eu
+Y3J0MCMGA1UdEgQcMBqGGGh0dHA6Ly93d3cuc3RhcnRzc2wuY29tLzANBgkqhkiG9w0BAQUF
+AAOCAQEANW1tcka0oCvnnFz85QznjqBdTJsjvYFqeTTDvf0y/70EE22r2swS8KcuZIqEGLvp
+zWZ1eHrNezxFAOjqdH9o9psTeWUXZPjPzSyaL2N+eXfL12m71NyAOioMtntraUGVbrnpcABD
+MeO8unYwLv+bGWA9gfZrFr6rjSYBgzbQZs2wAQZtZBPUioiHQFwsuyBtowkdvIb/nvN30kvI
+xfdWvLUvV8lFCvcZ4vExXlG3E36YGDGvAXP9w5zT0I6IUTGWweB6SkHk7jeCqwBTXoxfKnKh
+K3gytJ8pMwcgbHrZEX8zq+pSW+GLbyCTZlS9D/45fn6CNxnKigTMACfhG44o2zGCA80wggPJ
+AgEBMIGTMIGMMQswCQYDVQQGEwJJTDEWMBQGA1UEChMNU3RhcnRDb20gTHRkLjErMCkGA1UE
+CxMiU2VjdXJlIERpZ2l0YWwgQ2VydGlmaWNhdGUgU2lnbmluZzE4MDYGA1UEAxMvU3RhcnRD
+b20gQ2xhc3MgMyBQcmltYXJ5IEludGVybWVkaWF0ZSBDbGllbnQgQ0ECAgCLMAkGBSsOAwIa
+BQCgggIOMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTExMDIx
+NjE3MTkxNlowIwYJKoZIhvcNAQkEMRYEFMtuxIyKEy6lNiWyKA3M4zSbmavuMF8GCSqGSIb3
+DQEJDzFSMFAwCwYJYIZIAWUDBAECMAoGCCqGSIb3DQMHMA4GCCqGSIb3DQMCAgIAgDANBggq
+hkiG9w0DAgIBQDAHBgUrDgMCBzANBggqhkiG9w0DAgIBKDCBpAYJKwYBBAGCNxAEMYGWMIGT
+MIGMMQswCQYDVQQGEwJJTDEWMBQGA1UEChMNU3RhcnRDb20gTHRkLjErMCkGA1UECxMiU2Vj
+dXJlIERpZ2l0YWwgQ2VydGlmaWNhdGUgU2lnbmluZzE4MDYGA1UEAxMvU3RhcnRDb20gQ2xh
+c3MgMyBQcmltYXJ5IEludGVybWVkaWF0ZSBDbGllbnQgQ0ECAgCLMIGmBgsqhkiG9w0BCRAC
+CzGBlqCBkzCBjDELMAkGA1UEBhMCSUwxFjAUBgNVBAoTDVN0YXJ0Q29tIEx0ZC4xKzApBgNV
+BAsTIlNlY3VyZSBEaWdpdGFsIENlcnRpZmljYXRlIFNpZ25pbmcxODA2BgNVBAMTL1N0YXJ0
+Q29tIENsYXNzIDMgUHJpbWFyeSBJbnRlcm1lZGlhdGUgQ2xpZW50IENBAgIAizANBgkqhkiG
+9w0BAQEFAASCAQAUndZJlG4SnTepl+MTcEcf2TOnk99DLJiSy0c7Qm5uYZwGdikiFEeRaRm3
+m8WDhXbOXCdiv0z/JOjAIn1j3oS0rzm8bYnRJVOqhv3SvSps/ovkyN5onbF3H+VUsafpY6rn
+qXkXBikrboOEM1tpyO0l/FzYSWIpVZr3rvF+D0JWFCfSsB6TnrFm29aGa9SnnpZ3OiXL2cqW
+s7F0ZAjWDwi1n02pe3XAdTFS4/D83Do8GpFr1tI9H12F5yniF3zdLAry/GOycmeX02P/Ko7L
+FRNBylkL/idUnfMYLD0I0ShDkey9wjABvtAJ+AR6QHaEDr65BfzZodBb4zSZcc1qhm/PAAAA
+AAAA
+--------------ms030406010806090706040702--

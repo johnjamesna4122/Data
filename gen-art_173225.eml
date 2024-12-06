@@ -1,0 +1,81 @@
+Return-Path: <noreply@ietf.org>
+X-Original-To: gen-art@ietf.org
+Delivered-To: gen-art@ietfa.amsl.com
+Received: from [10.244.8.203] (unknown [104.131.183.230])
+	by ietfa.amsl.com (Postfix) with ESMTP id 557F5C1CAF51;
+	Thu, 21 Nov 2024 20:47:59 -0800 (PST)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+From: Gyan Mishra via Datatracker <noreply@ietf.org>
+To: <gen-art@ietf.org>
+X-Test-IDTracker: no
+X-IETF-IDTracker: 12.28.0
+Auto-Submitted: auto-generated
+Precedence: bulk
+Message-ID: 
+ <173225087893.294.3439079712584526241@dt-datatracker-66b9b5f699-rt66b>
+Date: Thu, 21 Nov 2024 20:47:58 -0800
+Message-ID-Hash: FAFOG7ZNTOM5QAEY67ZMGX5EUVJUKZEP
+X-Message-ID-Hash: FAFOG7ZNTOM5QAEY67ZMGX5EUVJUKZEP
+X-MailFrom: noreply@ietf.org
+X-Mailman-Rule-Misses: dmarc-mitigation; no-senders; approved; emergency;
+ loop; banned-address; member-moderation; header-match-gen-art.ietf.org-0;
+ header-match-gen-art.ietf.org-1; header-match-gen-art.ietf.org-2;
+ nonmember-moderation; administrivia; implicit-dest; max-recipients; max-size;
+ news-moderation; no-subject; digests; suspicious-header
+CC: draft-ietf-6man-snac-router-ra-flag.all@ietf.org, ipv6@ietf.org,
+ last-call@ietf.org
+X-Mailman-Version: 3.3.9rc6
+Reply-To: Gyan Mishra <hayabusagsm@gmail.com>
+Subject: =?utf-8?q?=5BGen-art=5D_Genart_last_call_review_of_draft-ietf-6man-snac-rout?=
+	=?utf-8?q?er-ra-flag-02?=
+List-Id: "GEN-ART: General Area Review Team" <gen-art.ietf.org>
+Archived-At: 
+ <https://mailarchive.ietf.org/arch/msg/gen-art/kuJ8yuOABb3jEmEEdHTc7bV4RD8>
+List-Archive: <https://mailarchive.ietf.org/arch/browse/gen-art>
+List-Help: <mailto:gen-art-request@ietf.org?subject=help>
+List-Owner: <mailto:gen-art-owner@ietf.org>
+List-Post: <mailto:gen-art@ietf.org>
+List-Subscribe: <mailto:gen-art-join@ietf.org>
+List-Unsubscribe: <mailto:gen-art-leave@ietf.org>
+
+Reviewer: Gyan Mishra
+Review result: Ready
+
+I am the assigned Gen-ART reviewer for this draft. The General Area
+Review Team (Gen-ART) reviews all IETF documents being processed
+by the IESG for the IETF Chair.  Please treat these comments just
+like any other last call comments.
+
+For more information, please see the FAQ at
+
+<https://wiki.ietf.org/en/group/gen/GenArtFAQ>.
+
+Document: draft-ietf-6man-snac-router-ra-flag-??
+Reviewer: Gyan Mishra
+Review Date: 2024-11-21
+IETF LC End Date: 2024-11-11
+IESG Telechat date: 2024-12-05
+
+Summary:
+
+This document defines a new flag, the SNAC Router flag, in the Router
+Advertisement message that can be used to distinguish configuration information
+sent by SNAC routers from information sent by infrastructure routers. This flag
+is used only by SNAC routers and is ignored by all other devices.
+
+This draft is very simple and to the point and is ready for publication.
+I believe this be flag will be very useful in helping identify SNAC routers in
+the SOHO network.
+
+Major issues:
+None
+
+Minor issues:
+None
+
+Nits/editorial comments:
+None
+
+

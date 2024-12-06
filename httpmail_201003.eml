@@ -1,0 +1,144 @@
+Return-Path: <Nicolas.Williams@Sun.COM>
+X-Original-To: httpmail@core3.amsl.com
+Delivered-To: httpmail@core3.amsl.com
+Received: from localhost (localhost [127.0.0.1]) by core3.amsl.com (Postfix)
+ with ESMTP id 2576C3A68A9 for <httpmail@core3.amsl.com>;
+ Fri, 12 Mar 2010 14:23:49 -0800 (PST)
+X-Virus-Scanned: amavisd-new at amsl.com
+X-Spam-Flag: NO
+X-Spam-Score: -6.283
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.283 tagged_above=-999 required=5
+ tests=[BAYES_00=-2.599, RCVD_IN_DNSWL_MED=-4, SARE_MILLIONSOF=0.315,
+ UNPARSEABLE_RELAY=0.001]
+Received: from mail.ietf.org ([64.170.98.32]) by localhost (core3.amsl.com
+ [127.0.0.1]) (amavisd-new, port 10024) with ESMTP id MRelcLjaPn61 for
+ <httpmail@core3.amsl.com>; Fri, 12 Mar 2010 14:23:47 -0800 (PST)
+Received: from rcsinet11.oracle.com (rcsinet11.oracle.com [148.87.113.123]) by
+ core3.amsl.com (Postfix) with ESMTP id 92D083A692F for <httpmail@ietf.org>;
+ Fri, 12 Mar 2010 14:19:26 -0800 (PST)
+Received: from rcsinet13.oracle.com (rcsinet13.oracle.com [148.87.113.125]) by
+ rcsinet11.oracle.com (Switch-3.4.2/Switch-3.4.2) with ESMTP id o2CMJVxM008003
+ (version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=OK) for
+ <httpmail@ietf.org>; Fri, 12 Mar 2010 22:19:32 GMT
+Received: from acsmt354.oracle.com (acsmt354.oracle.com [141.146.40.154]) by
+ rcsinet13.oracle.com (Switch-3.4.2/Switch-3.4.1) with ESMTP id o2C3LnAu022661
+ for <httpmail@ietf.org>; Fri, 12 Mar 2010 22:19:27 GMT
+Received: from abhmt017.oracle.com by acsmt354.oracle.com with ESMTP id
+ 77444011268432359; Fri, 12 Mar 2010 14:19:19 -0800
+Received: from Sun.COM (/129.153.128.104) by default (Oracle Beehive Gateway
+ v4.0) with ESMTP ; Fri, 12 Mar 2010 14:19:19 -0800
+Resent-From: Nicolas Williams <Nicolas.Williams@Sun.COM>
+Resent-Date: Fri, 12 Mar 2010 16:19:14 -0600
+Resent-Message-ID: <20100312221914.GD21318@Sun.COM>
+Resent-To: httpmail@ietf.org
+Date: Fri, 12 Mar 2010 16:17:29 -0600
+From: Nicolas Williams <Nicolas.Williams@oracle.com>
+To: httpmail@ietf.org
+Message-ID: <20100312221729.GK14993@Sun.COM>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.20 (2010-03-02)
+X-Source-IP: acsmt354.oracle.com [141.146.40.154]
+X-Auth-Type: Internal IP
+X-CT-RefId: str=0001.0A090205.4B9ABDF2.018F:SCFMA4539814,ss=1,fgs=0
+Subject: [httpmail] Modelling E-mail access in a protocol-independent
+X-BeenThere: httpmail@ietf.org
+X-Mailman-Version: 2.1.9
+Precedence: list
+List-Id: Discussion of email store access via HTTP <httpmail.ietf.org>
+List-Unsubscribe: <https://www.ietf.org/mailman/listinfo/httpmail>,
+ <mailto:httpmail-request@ietf.org?subject=unsubscribe>
+List-Archive: <http://www.ietf.org/mail-archive/web/httpmail>
+List-Post: <mailto:httpmail@ietf.org>
+List-Help: <mailto:httpmail-request@ietf.org?subject=help>
+List-Subscribe: <https://www.ietf.org/mailman/listinfo/httpmail>,
+ <mailto:httpmail-request@ietf.org?subject=subscribe>
+X-List-Received-Date: Fri, 12 Mar 2010 22:23:49 -0000
+
+[Pardon the re-send.  I forgot to use my new e-mail address.]
+
+I stumbled onto the BikINI (IMAP replacement proposal) and httpmail this
+weekend as a side-effect of migrating mailboxes as part of my old employer's
+acquisition by my new employer :)
+
+I have a number of comments on both:
+
+a) Must support for folders as "tags", with messages being able to be in
+   more than one folder at once.  Folders should be seen as collections.
+
+b) Must support HUGE mail folders -- folders with hundreds of thousands,
+   or even millions of messages.  Folders' contents typically change in
+   these ways:
+
+    - new messages are appended;
+    - messages are flagged a new/seen/read/... or for deletion;
+    - messages flagged for deletion are expunged.
+
+   Changes to folders can be asynchronous to the clients that have them
+   "open": new e-mail can be delivered externally, multiple clients can
+   access a folder concurrently and change message flags, add messages
+   and even expunge messages.
+
+   This implies that a diff/delta log model of keeping clients up to
+   date with folder contents would be beneficial.
+
+c) Server-side search facilities would be a big plus.  Particularly when
+   we're talking about large folders in large mailboxes.
+
+   Clients can always maintain local indexes, or even entire copies of
+   mailboxes (many do) to speed up searches.  But server-side search
+   facilities help produce light-weight clients, such as for mobile
+   devices.
+
+   I'm particularly annoyed at how many clients fail to follow threads
+   across folders.  All that requires is a search by In-reply-to message
+   IDs (Ok, I'm simplifying a bit...).
+
+d) Asynchronous or cancellable operations are a big plus (who has not
+   experienced an MUA freezing while downloading a huge message?).
+
+Looking at httpmail I think the model behind it applies equally well to
+BikINI:
+
+   Everything's a resource with a URL or an action.  Resources:
+
+    - messages;
+    - mailboxes;
+    - folders in mailboxes;
+    - filters;
+    - feeds/logs;
+
+   Verbs:
+
+    - get a message
+    - put a message
+    - modify message metadata (flags, tags/folders)
+    - list a mailbox's folders
+    - add/rename/delete folders
+    - list a folder's messages
+    - get a feed/log of changes to folders' contents
+
+The actions map well to HTTP verbs; a RESTful protocol is feasible.
+
+As to differences between an HTTP-based protocol and a more traditional
+protocol, the main one that I can think relates to authentication
+options: HTTP has fewer options than a non-HTTP protocol (which could
+use SASL, for example, in addition to TLS).  (But this depends in part
+on the status of HTTP/Negotiate updates, about which I'm not up to
+date.)  There are other differences, such as how much chattier an
+HTTP/Atom-based protocol would be than BikINI.
+
+It's possible that there is really only room for one new protocol, and
+that's likely to be httpmail in this day and age.  But the model behind
+it sure seems to be generalizable.
+
+A comment specific to httpmail: Atom is nice, but for light-weight
+clients it'd be nicer if there was a simple, non-XML-based format for
+folder listings and the like.  Sure, such a format would not be as
+extensible as XML schemas are, but that seems like a fair price to pay
+for mobile apps.
+
+Nico
+-- 
